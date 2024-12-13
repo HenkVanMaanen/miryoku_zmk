@@ -7,7 +7,7 @@ jobs:
     with:
       board: '["nice_nano_v2"]'
       shield: '["splitkb_aurora_sweep_left"]'
-      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y"]'
+      kconfig: '["CONFIG_BT_CTLR_TX_PWR_PLUS_8=y\nCONFIG_ZMK_BLE_EXPERIMENTAL_FEATURES=y\nCONFIG_ZMK_POINTING=y"]'
 
   build-right:
     uses: ./.github/workflows/main.yml
